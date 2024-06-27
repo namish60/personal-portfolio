@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: black; */
+    background-image: url("https://th.bing.com/th/id/R.f550e5b3f2115a8b7a099c5ae37f523a?rik=MF7q%2b9mNkJ4tJA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2flKlqTGz.jpg&ehk=r4xBFIVuDcjW8AzWPd76gmXQ2DOIqHk9A58DGgsVQyY%3d&risl=&pid=ImgRaw&r=0");
+    filter: brightness(1);
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    padding: 20px 700px;
+}
+
+nav ul a{ 
+    text-decoration: none;
+}
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+nav ul li {
+    color: yellow;
+    list-style: none;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+
+.home {
+    height: 60vh;
+}
+
+.home > div {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    flex-direction: column;
+    gap: 10px;
+    width: 448px;
+    color: white;
+}
+
+/* Resume Section */
+.home a{
+    text-decoration: none;
+}
+
+.home button {
+    border: 2px solid rgba(241, 241, 25, 0.89);
+    background-color: rgba(241, 241, 25, 0.89);
+    color: black;
+    height: 50px;
+    width: 230px;
+    margin-top: 40px;
+    margin-left: 150px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-bottom: 1.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and image */
+}
+
+.home button img {
+    width: 18px;
+    height: 18px;
+}
+
+
+.home button:hover{
+    cursor: pointer;
+}
+
+.home button:active{
+    background-color: blue;
+    color: white;
+}
+
+.separation {
+    height: 5px;
+    background-color: grey;
+    margin-top: 25px;
+}
+
+.about {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about > div {
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-bottom: 10px;
+}
+
+.about .boxes {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.about .box {
+    border-radius: 18px;
+    border: 2px solid aqua;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: rgba(54, 46, 46, 0);
+    color: whitesmoke;
+    opacity: 0.5;
+   
+}
+
+.about .box h3 {
+    padding-top: 5px;
+}
+
+.about .box p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.skills > div {
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-top: 20px;
+}
+
+/* For Programming Languages: */
+.pl p {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 23px;
+}
+
+.pl .grids {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    justify-content: space-between; /* Distribute items evenly with space in between */
+    padding: 10px; /* Optional padding around the grid */
+}
+
+.pl .grid {
+    width: calc(25% - 20px); /* Adjusted width to fit 4 items in a row with padding */
+    height: 100px; /* Increased height */
+    margin-bottom: 20px; /* Space between rows */
+    display: flex;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    padding-right: 90px;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pl .grid:nth-child(4n+1) {
+    margin-left: 0; /* Remove left margin for the first item in each row */
+}
+
+.pl .grid:nth-child(n+5) {
+    margin-top: 20px; /* Add top margin starting from the 5th item to create rows */
+}
+
+.grid img {
+    height: 100px;
+}
+
+/* Separation between PL and DB: */
+.separation1{
+    height: 1px;
+    background-color: rgba(99, 94, 94, 0.104);
+    margin-top: 30px;
+}
+
+.db {
+    flex: 1; /* Take up remaining space */
+    text-align: left;
+    padding-right: 20px; /* Adjust as needed */
+    margin-top: 20px;
+}
+
+.db p {
+    font-size: 23px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.grids1 {
+    display: flex;
+    flex: 3; /* Take up 3/4th of the container */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between items */
+}
+
+.grid1 {
+    flex: 1; /* Each box takes up equal space */
+    height: 100px;
+    width: 80px; /* Adjust the width of each box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.grid1 img {
+    height: 100px;
+}
+
+/* For Frameworks: */
+.fw {
+    flex: 1; /* Take up remaining space */
+    text-align: left;
+    padding-right: 20px; /* Adjust as needed */
+    margin-top: 20px; /* Adjusted to match the margin-top of .db */
+}
+
+.fw p {
+    font-size: 23px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.grids2 {
+    display: flex;
+    flex: 3; /* Take up 3/4th of the container */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between items */
+}
+
+.grid2 {
+    flex: 1; /* Each box takes up equal space */
+    height: 100px;
+    width: 80px; /* Adjust the width of each box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 30px; /* Adjusted to match the margin-top of .grid1 */
+    margin-bottom: 40px;
+}
+
+.grid2 img {
+    height: 100px;
+}
+.projects > div{
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-top: 20px;
+}
+.projects .project-item {
+    display: flex;
+    align-items: center;
+}
+
+.projects .image1 { 
+    margin-right: 20px; /* Adjust margin as needed */
+    filter: brightness(9);
+}
+
+.projects span h2 { 
+    color: rgb(210, 243, 24);
+    margin: 0; /* Remove default margin */
+    font-size: 24px;
+}
+
+.projects span p {
+    color: white; /* Assuming you want the paragraph text to be white as well */
+    margin: 0; /* Remove default margin */
+    font-size: 18px;
+}
+.footer > div{
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-top: 20px;
+}
+.footer .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+.icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+.icon img{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+
+.footer .symbols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+.symbol{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+.symbol img{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+
